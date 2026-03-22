@@ -522,15 +522,12 @@
 
         /* === V2: Glossary Accordion === */
         .glossary-term {
-            padding:16px 20px; background:var(--bg-page); border-radius:8px;
-            margin-bottom:8px; cursor:pointer; transition:var(--transition);
+            padding:16px 20px; background:var(--bg-page); border-radius:8px 8px 0 0;
+            margin-bottom:0; transition:var(--transition);
         }
         .glossary-term:hover { background:var(--bg-content); box-shadow:var(--shadow-sm); }
         .glossary-term strong { color:var(--primary); }
-        .glossary-def { display:none; padding:8px 20px 16px; font-size:14px; color:var(--text-muted); }
-        .glossary-term.open + .glossary-def { display:block; }
-        .glossary-term::after { content:'▸'; float:right; transition:var(--transition); color:var(--text-light); }
-        .glossary-term.open::after { transform:rotate(90deg); }
+        .glossary-def { display:block; padding:8px 20px 16px; font-size:14px; color:var(--text-muted); background:var(--bg-page); border-radius:0 0 8px 8px; margin-bottom:12px; }
 
         /* === V2: Version Badge === */
         .version-badge {
@@ -1070,16 +1067,16 @@
 <div class="glossary-term" onclick="this.classList.toggle('open')"><strong>Артефакт</strong></div>
 <div class="glossary-def">Любая визуальная ошибка: белая линия, квадратная форма, закруглённые углы, пиксельные блоки. Midjourney часто генерирует их — нужно убирать.</div>
 
-<div class="glossary-term" onclick="this.classList.toggle('open')"><strong>.zprj файл</strong></div>
+<div class="glossary-term"><strong>.zprj файл</strong></div>
 <div class="glossary-def">Формат проекта CLO 3D. Содержит 3D-модель, текстуры и настройки ткани. Это основной рабочий файл, который вы отправляете менеджеру.</div>
 
-<div class="glossary-term" onclick="this.classList.toggle('open')"><strong>Промпт (Prompt)</strong></div>
+<div class="glossary-term"><strong>Промпт (Prompt)</strong></div>
 <div class="glossary-def">Текстовое описание на английском, по которому Midjourney генерирует изображение. Пример: «abstract all-over print sublimation men t-shirt pattern».</div>
 
-<div class="glossary-term" onclick="this.classList.toggle('open')"><strong>Центр / Середина</strong></div>
+<div class="glossary-term"><strong>Центр / Середина</strong></div>
 <div class="glossary-def">Главная визуальная часть дизайна, которая оказывается на туловище футболки. Подбирается из сгенерированных вариантов в Midjourney.</div>
 
-<div class="glossary-term" onclick="this.classList.toggle('open')"><strong>Grain Direction</strong></div>
+<div class="glossary-term"><strong>Grain Direction</strong></div>
 <div class="glossary-def">Настройка в CLO 3D, определяющая «направление волокон» ткани. Влияет на то, как текстура выглядит на 3D-модели.</div>
 
 <!-- ==================== 11. FAQ (EXPANDED) ==================== -->
